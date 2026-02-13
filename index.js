@@ -69,7 +69,7 @@ const client = new Client({
    READY
 =========================== */
 
-client.on("ready", async () => {
+client.on("clientReady", async () => {
     console.log(`✅ Logado como ${client.user.tag}`);
     await initDB();
     startWorker();
